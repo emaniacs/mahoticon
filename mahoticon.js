@@ -13,6 +13,8 @@
 
 // change log
 // * v0.1 -> ** initial commit
+// * v0.2 -> ** fixed regex.
+//           ** adding support in kaskus.us/member.php
 
 var mahoticon = {
 	re: /(?:^|\s+):(maho[s]?)/gm,
@@ -26,7 +28,12 @@ var mahoticon = {
 	},
 	
 	getTd: function() {
-		var cl = 'alt1';		
+		var cl = 'alt1';
+		if (document.URL.match (/.*member\.php.*/)) {
+			cl = 'visitor_message_body';
+			mahoticon.rePost = /vmessage_text_[0-9]{1,}/;
+		}
+		
 		return document.getElementsByClassName(cl);
 	},
 	reborn: function() {
