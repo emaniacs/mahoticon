@@ -17,7 +17,7 @@
 //           ** adding support in kaskus.us/member.php
 
 var mahoticon = {
-	re: /(?:^|\s+):(maho[s]?)/gm,
+	re: /(?:^|\s+):(maho[s]?)(?:\s|\n)/gm,
 	rePost: /td_post_[0-9]{1,}/,
 	img: {
 		'maho': '<img class="inlineimg" from="Mahoticon" src="http://static.kaskus.us/images/smilies/mahos.gif" title=":maho reborn!" />',
