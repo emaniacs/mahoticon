@@ -20,8 +20,8 @@ var mahoticon = {
 	re: /(?:^|\s+):(maho[s]?)(?:\s|\n)/gm,
 	rePost: /td_post_[0-9]{1,}/,
 	img: {
-		'maho': '<img class="inlineimg" from="Mahoticon" src="http://static.kaskus.us/images/smilies/mahos.gif" title=":maho reborn!" />',
-		'mahos': '<img class="inlineimg" from="Mahoticon" src="http://static.kaskus.us/images/smilies/s_sm_maho.gif" title=":maho reborn!" />'
+		'maho': '<img class="inlineimg" from="Mahoticon" src="http://static.kaskus.co.id/images/smilies/mahos.gif" title=":maho reborn!" />',
+		'mahos': '<img class="inlineimg" from="Mahoticon" src="http://static.kaskus.co.id/images/smilies/s_sm_maho.gif" title=":maho reborn!" />'
 	},
 	trim: function (t) {
 		return t.replace(/^\s*/,'').replace(/\s*$/,'');
